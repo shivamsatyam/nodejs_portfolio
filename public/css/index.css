@@ -1,0 +1,451 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/*
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/b1.png),url(../img/bg1.jpeg);
+    background-size: 50% 100%,cover;
+    background-position: right,center;
+    background-repeat: no-repeat,no-repeat;
+    clip-path: polygon(0 0,100% 0, 100% 30%, 100% 70%,50% 100%,50% 100%,0% 70%, 0% 30%);
+
+}
+
+*/
+
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.navfirst{
+
+}
+
+.navfirst h1{
+    font-family: sans-serif;
+    font-weight: 300;
+    letter-spacing: 3.3px;
+}
+
+
+.navfirst span{
+	color: #ff7605;
+}
+
+
+
+.navsecond{
+
+}
+
+.navsecond ul{
+    display: flex;
+}
+
+
+.navsecond ul li{
+    list-style: none;
+    margin: 1px 14px;
+    font-family: system-ui;
+    letter-spacing: 0.3px;
+}
+
+
+.navsecond ul li a{
+
+}
+
+
+.nav-desc{
+        color: white;
+    height: 61%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-class{
+margin-left: 6%;
+}
+
+.nav-class h5{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin: 5px 0px;
+}
+
+.nav-class h1{
+    font-family: sans-serif;
+    font-size: 3.6rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    margin: 7px 0px;
+}
+
+
+.nav-class h2{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+.nav-class button{
+    color: white;
+    background-color: #ff1800;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+
+.about{
+    margin: 26px 0px;
+}
+
+.about h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.4rem;
+}
+
+.who_am_i{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #ff1800;
+}
+
+.about-flex{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 49px;
+    flex-wrap: wrap;
+
+
+}
+.about-desc{
+
+
+}
+
+.about-image{
+
+}
+
+.about-image img{
+       max-width: 393px;
+
+
+}
+
+
+.about-desc{
+	    max-width: 874px;
+    padding: 15px;
+    margin: 0px 34px;
+}
+
+.about-desc h1{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.about-desc p{
+    color: black;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    margin: 29px 0px;
+    font-weight: 600;
+}
+
+.btn{
+	    color: white;
+    background-color: #ff1800;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+
+.skill_section{
+	    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    padding: 13px;
+
+}
+
+.skill_desc{
+    text-align: center;
+    margin: 20px 0px;
+    padding: 18px;
+}
+
+.header{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: white;
+}
+
+.skill{
+        display: flex;
+    color: white;
+    justify-content: space-around;
+    background-color: #292929;
+    margin: 10px auto;
+    width: 90vw;
+    padding: 41px;
+    margin-bottom: 21px;
+    flex-wrap: wrap;
+}
+
+.skill-about{
+    max-width: 802px;
+}
+
+.skill-about p{
+ont-family: cursive;
+    letter-spacing: 1px;
+    margin: 12px 0px;
+    font-size: 1.2rem;
+}
+
+
+.skill_type{
+    width: 400px;
+}
+
+.skill_type_item{
+margin: 13px 0px;
+}
+
+
+.skill_type_item h2{
+	    font-family: sans-serif;
+}
+
+.skill_range{
+    display: flex;
+    margin-top: 13px;
+}
+
+.range_index{
+    background-color: #412de8;
+    width: 100%;
+}
+
+.percentage{
+    margin-left: 15px;
+    font-family: sans-serif;
+}
+
+
+.services{
+      display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,300px));
+    justify-content: space-around;
+    padding: 11px;
+   
+}
+
+.services-box{
+   padding: 13px;
+    box-shadow: 0px 0px 3px 0px black;
+    transition: 0.5s;
+    margin-top: 33px;
+}
+
+
+.services-box:hover{
+	    background-color: #fd402d;
+}
+
+
+.services-box:hover h2 {
+	color: #fff;
+}
+
+
+.services-box:hover p {
+	color: #fff;
+}
+
+
+.services-img{
+    text-align: center;
+}
+.services-img img{
+       width: 230px;
+    height: 230px;
+}
+
+.services-box h2{
+    margin: 4px 0px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.services-box p{
+	    font-family: system-ui;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.contact{
+	height: 100vh;
+	    margin: 46px 0px;
+}
+
+.contact::before{
+    content: '';
+    height: 100vh;
+    background-color: #ff1800;
+    clip-path: polygon(0 0,0% 100%,100% 0%);
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.contact-data{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-image{
+
+}
+
+.contact-image img{
+
+
+}
+
+
+.contact-form{
+
+
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+
+form h2{
+    text-align: center;
+    margin-bottom: 14px;
+    color: white;
+    font-family: sans-serif;
+}
+
+form h2{
+
+}
+
+form input{
+    height: 7vh;
+    margin: 9px 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+form textarea{
+    margin: 9px 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 30vh;
+}
+
+
+
+.form-btn{
+
+}
+
+footer{
+    position: relative;
+    bottom: -68px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    background-color: #c7c3c3;
+}
+
+
+
+@media (max-width: 1000px){
+	.navsecond ul{
+		display: none !important; 
+	}
+}
+
+
+@media (max-width: 800px){
+	.nav-class h1{
+		font-size:  2rem !important; 
+	}
+
+	.nav-class h2{
+		font-size: 1.4rem !important; 
+	}
+
+	
+
+}
+
+
+@media (max-width: 600px){
+	form{
+    	width: 400px;
+
+	}
+
+
+}
+
+
+
+@media (max-width: 500px){
+	form{
+    	width: 300px;
+
+	}
+
+	
+}
