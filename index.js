@@ -47,7 +47,7 @@ app.get('/',(req,res)=>{
 	if(req.session.email !=null){
 			res.render('index')
 	}else{
-		res.render('your')
+		res.render('login')
 	}
 })
 
