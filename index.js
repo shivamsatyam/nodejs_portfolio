@@ -29,7 +29,7 @@ app.use(session({
 
 
 
-mongoose.connect('mongodb://localhost:27017/wordpress',{useNewUrlParser:true,useUnifiedTopology:true}).then((err)=>{
+mongoose.connect('mongodb+srv://shivamsatyam:shivamsatyam123@cluster0.hrigk.mongodb.net/port?retryWrites=true&m=majority',{useNewUrlParser:true,useUnifiedTopology:true}).then((err)=>{
 	console.log('the connection is successfully established')
 })
 
