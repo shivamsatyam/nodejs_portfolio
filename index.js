@@ -139,7 +139,7 @@ app.get('/describe/:id',(req,res)=>{
 })
 
 app.get('/download/:a/:b',(req,res)=>{
-re.send('fhj')
+res.send('fhj')
 
 })
 
