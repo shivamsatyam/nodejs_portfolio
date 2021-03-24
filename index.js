@@ -11,7 +11,7 @@ const Html5Entities = require('html-entities').Html5Entities
 const bcrypt = require('bcryptjs')
 const validator = require('validator');
 const save_model  = require('./model/save_model.js')
-const html_to_pdf = require('html-pdf-node')
+
 const port = process.env.PORT || 5000
 
 
@@ -139,15 +139,7 @@ app.get('/describe/:id',(req,res)=>{
 })
 
 app.get('/download/:a/:b',(req,res)=>{
-	let id  = req.params.a
-
-	let options = {format:'A4'}
-
-	let file = {url:`https://shivamport.herokuapp.com/describe/${id}`}
-
-	html_to_pdf.generatePdf(file,options).then((pdf)=>{
-		console.log('good')
-	})
+re.send('fhj')
 
 })
 
