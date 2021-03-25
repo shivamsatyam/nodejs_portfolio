@@ -20,7 +20,7 @@ app.use(session({
  	resave:false,
  	saveUninitialized:true,
  	store:new MongoStore({
- 		url:'mongodb://localhost:27017/wordpress',
+ 		url:'mongodb+srv://shivamsatyam:shivamsatyam123@cluster0.hrigk.mongodb.net/port?retryWrites=true&m=majority',
  		mongooseConnection:mongoose.connection,
  		ttl:14*24*60*60
  	})
