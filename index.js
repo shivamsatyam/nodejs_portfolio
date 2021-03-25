@@ -47,7 +47,7 @@ app.get('/',(req,res)=>{
 	if(req.session.email !=null){
 			res.render('index')
 	}else{
-		res.render('login')
+		res.render('login',{"data":''})
 	}
 })
 
