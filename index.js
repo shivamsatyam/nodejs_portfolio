@@ -34,6 +34,25 @@ mongoose.connect('mongodb+srv://shivamsatyam:shivamsatyam123@cluster0.hrigk.mong
 })
 
 
+// app.use(session({
+//  	secret:"shivam",
+//  	resave:false,
+//  	saveUninitialized:true,
+//  	store:new MongoStore({
+//  		url:'mongodb://localhost:27017/wordpress',
+//  		mongooseConnection:mongoose.connection,
+//  		ttl:14*24*60*60
+//  	})
+//  }))
+//  
+// 
+// 
+// 
+// mongoose.connect('mongodb://localhost:27017/wordpress',{useNewUrlParser:true,useUnifiedTopology:true}).then((err)=>{
+// 	console.log('the connection is successfully established')
+// })
+// 
+
 
 app.set('view engine','ejs')
 app.set('views',path.join(__dirname,'views'))
@@ -44,10 +63,12 @@ app.use(bodyParser.json())
 
 
 app.get('/',(req,res)=>{
+
+	console.log(req.session)
 	if(req.session.email !=null){
 			res.render('index')
 	}else{
-		res.render('login',{"data":''})
+		res.redirect('/your')
 	}
 })
 
@@ -141,6 +162,13 @@ app.get('/describe/:id',(req,res)=>{
 app.get('/download/:a/:b',(req,res)=>{
 res.send('fhj')
 
+})
+
+
+app.get('/logout',(req,res)=>{
+	req.session.destroy()
+	req.session = null
+	res.redirect('/login')
 })
 
 app.listen(port,(err)=>{
